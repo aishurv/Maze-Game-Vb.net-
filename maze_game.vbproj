@@ -1,0 +1,383 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C960973A-AAB8-434C-9D0A-89CF1FBFA5C2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>maze_game.My.MyApplication</StartupObject>
+    <RootNamespace>maze_game</RootNamespace>
+    <AssemblyName>maze_game</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>maze_game.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>maze_game.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>F8FBE5079051B2A2C954CE7F8CB55482BD1C8527</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>maze_game_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox1.Designer.vb">
+      <DependentUpon>AboutBox1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AboutBox1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Level.Designer.vb">
+      <DependentUpon>Level.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Level.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Rules.Designer.vb">
+      <DependentUpon>Rules.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Rules.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SM_level1.Designer.vb">
+      <DependentUpon>SM_level1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SM_level1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SM_level10.Designer.vb">
+      <DependentUpon>SM_level10.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SM_level10.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SM_level2.Designer.vb">
+      <DependentUpon>SM_level2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SM_level2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SM_level3.Designer.vb">
+      <DependentUpon>SM_level3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SM_level3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SM_level4.Designer.vb">
+      <DependentUpon>SM_level4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SM_level4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SM_level5.Designer.vb">
+      <DependentUpon>SM_level5.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SM_level5.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SM_level6.Designer.vb">
+      <DependentUpon>SM_level6.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SM_level6.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SM_level7.Designer.vb">
+      <DependentUpon>SM_level7.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SM_level7.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SM_level8.Designer.vb">
+      <DependentUpon>SM_level8.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SM_level8.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SM_level9.Designer.vb">
+      <DependentUpon>SM_level9.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SM_level9.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TM_level1.Designer.vb">
+      <DependentUpon>TM_level1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TM_level1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TM_level10.Designer.vb">
+      <DependentUpon>TM_level10.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TM_level10.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TM_level2.Designer.vb">
+      <DependentUpon>TM_level2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TM_level2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TM_level3.Designer.vb">
+      <DependentUpon>TM_level3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TM_level3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TM_level4.Designer.vb">
+      <DependentUpon>TM_level4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TM_level4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TM_level5.Designer.vb">
+      <DependentUpon>TM_level5.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TM_level5.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TM_level6.Designer.vb">
+      <DependentUpon>TM_level6.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TM_level6.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TM_level7.Designer.vb">
+      <DependentUpon>TM_level7.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TM_level7.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TM_level8.Designer.vb">
+      <DependentUpon>TM_level8.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TM_level8.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TM_level9.Designer.vb">
+      <DependentUpon>TM_level9.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TM_level9.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AboutBox1.resx">
+      <DependentUpon>AboutBox1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Level.resx">
+      <DependentUpon>Level.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rules.resx">
+      <DependentUpon>Rules.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SM_level1.resx">
+      <DependentUpon>SM_level1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SM_level10.resx">
+      <DependentUpon>SM_level10.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SM_level2.resx">
+      <DependentUpon>SM_level2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SM_level3.resx">
+      <DependentUpon>SM_level3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SM_level4.resx">
+      <DependentUpon>SM_level4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SM_level5.resx">
+      <DependentUpon>SM_level5.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SM_level6.resx">
+      <DependentUpon>SM_level6.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SM_level7.resx">
+      <DependentUpon>SM_level7.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SM_level8.resx">
+      <DependentUpon>SM_level8.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SM_level9.resx">
+      <DependentUpon>SM_level9.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TM_level1.resx">
+      <DependentUpon>TM_level1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TM_level10.resx">
+      <DependentUpon>TM_level10.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TM_level2.resx">
+      <DependentUpon>TM_level2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TM_level3.resx">
+      <DependentUpon>TM_level3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TM_level4.resx">
+      <DependentUpon>TM_level4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TM_level5.resx">
+      <DependentUpon>TM_level5.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TM_level6.resx">
+      <DependentUpon>TM_level6.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TM_level7.resx">
+      <DependentUpon>TM_level7.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TM_level8.resx">
+      <DependentUpon>TM_level8.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TM_level9.resx">
+      <DependentUpon>TM_level9.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="maze_game_TemporaryKey.pfx" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
